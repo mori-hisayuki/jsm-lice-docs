@@ -18,6 +18,9 @@ tasks:
   install:
     # pnpm installを実行するTask
     cmd: $COMPOSE run --rm node pnpm install
+  pnpm:
+    # pnpmを実行するTask
+    cmd: $COMPOSE run --rm node pnpm {{.CLI_ARGS}}
   add:ui:
     # shadcn-uiからのコンポーネントの追加をするTask
     # 例: task add:ui -- button
