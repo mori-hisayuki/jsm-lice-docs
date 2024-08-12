@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Editor } from "@/components/editor/Editor";
 
 const Document = () => {
   return (
     <div>
-      Document
+      <Editor />
     </div>
   );
 }
